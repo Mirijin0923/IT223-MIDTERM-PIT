@@ -1,6 +1,7 @@
 Appendix B: AI Prompt Log
+
 Entry #1
-Tool Used: Claude.ai
+Tool Used: Claude.ai  
 Prompt (copy-paste exactly):
 
 Can you check my HTML code for errors? Be specific about what line or section the error is in and explain why it is wrong. Here is my code: 
@@ -14,9 +15,9 @@ Can you check my HTML code for errors? Be specific about what line or section th
 <body>
 
     <nav>
-        <a href="about">About</a>
+        <a href="#about">About</a>
         <a href="#education">Education</a>
-        <a href="#skills">Skills</a>
+        <a href="skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -85,7 +86,7 @@ Can you check my HTML code for errors? Be specific about what line or section th
 </body>
 </html>
 
-AI Output (summary or screenshot reference):
+AI Output (summary or screenshot reference): 
 Four errors were found in the code a missing # in the About nav link, an unclosed tag in the About section, a wrong heading tag in the Projects section and in the Skills list, the & symbol was used incorrectly and should be written as &amp instead.
 
 How I used/modified it in my project:
@@ -94,7 +95,7 @@ How I used/modified it in my project:
 
 
 Entry #2
-Tool Used: Claude.ai
+Tool Used: Claude.ai  
 Prompt (copy-paste exactly):
 
 Can you check if my contact form is correct? I need a form with Name, Email, Message fields and a Send button. Please explain what's missing or wrong and explain what each part does. Here is my code:
@@ -111,8 +112,8 @@ Can you check if my contact form is correct? I need a form with Name, Email, Mes
     <button type="submit">Send</button>
 </form>
 
-AI Output (summary or screenshot reference):
-The response corrected the contact form by adding missing attributes like for in labels, name in inputs and textarea, and placeholders for guidance. It also explained that for links the label to the input, name is needed to send the data, and placeholder shows a hint for the user.
+AI Output (summary or screenshot reference): 
+The response corrected the contact form by adding missing attributes like `for` in labels, `name` in inputs and textarea, and placeholders for guidance. It also explained that `for` links the label to the input, `name` is needed to send the data, and `placeholder` shows a hint for the user.
 
 How I used/modified it in my project:
 I added for and name attributes to my form fields and placeholders. This made the form easier to fill out, and the labels now match the input boxes.
@@ -122,7 +123,6 @@ I added for and name attributes to my form fields and placeholders. This made th
 Entry #3
 Tool Used: Claude.ai
 Prompt (copy-paste exactly): 
-
  I’m making a minimalist website and I’m not sure what colors to choose. Can you suggest a clean and modern color palette with hex codes for light mode and dark mode?
 
 AI Output (summary or screenshot reference):
@@ -132,11 +132,9 @@ How I used/modified it in my project:
 I used the suggested colors as a guide for my website design. I applied the light mode colors to my main layout and sections, and prepared the dark mode colors so I can use them later.
 
 
-
 Entry #4
 Tool Used: Claude.ai
 Prompt (copy-paste exactly):  
-
 This is my simple CSS. Can you improve it to look more clean and modern using this warm color palette: #5c3d1e, #f5efe0, #c49a2e, #8b3a0f. Please explain what you changed and why. Here is my CSS code:
 body {
     font-family: Arial, sans-serif;
@@ -146,7 +144,6 @@ body {
     color: #333333;
 }
 
-/* Navigation */
 nav {
     background-color: #5c3d1e;
     padding: 15px;
@@ -163,14 +160,12 @@ nav a:hover {
     color: #c49a2e;
 }
 
-/* Images */
 img {
     width: 120px;
     display: block;
     margin: 20px auto;
 }
 
-/* Headings */
 h1 {
     color: #5c3d1e;
     text-align: center;
@@ -185,7 +180,6 @@ section h2 {
     color: #5c3d1e;
 }
 
-/* Education & Projects */
 #education div,
 #projects div {
     background-color: #ffffff;
@@ -195,7 +189,6 @@ section h2 {
     border-left: 4px solid #5c3d1e;
 }
 
-/* Skills */
 #skills ul {
     list-style: none;
     padding: 0;
@@ -216,7 +209,6 @@ section h2 {
     color: #2e1a0e;
 }
 
-/* Forms */
 form {
     display: flex;
     flex-direction: column;
@@ -230,20 +222,17 @@ label {
     font-weight: bold;
 }
 
-input,
-textarea {
+input, textarea {
     padding: 10px;
     border: 1px solid #5c3d1e;
     font-size: 14px;
 }
 
-input:focus,
-textarea:focus {
+input:focus, textarea:focus {
     border-color: #c49a2e;
     outline: none;
 }
 
-/* Buttons */
 button {
     background-color: #5c3d1e;
     color: #ffffff;
@@ -256,7 +245,6 @@ button:hover {
     background-color: #c49a2e;
     color: #2e1a0e;
 }
-
 AI Output (summary or screenshot reference):
 The AI helped me check and improve my CSS by making it cleaner, fixing alignment, spacing, and styling for sections, navigation, skill bars, form, and buttons. It also explained how each part works and what properties to use to make the layout organized and consistent.
 
@@ -267,23 +255,21 @@ I updated my CSS to make the page look neater and more organized. I fixed spacin
 
 Entry #5
 Tool Used: Claude.ai
-Prompt (copy-paste exactly): 
-
+Prompt (copy-paste exactly):  
 How do I add dark mode in CSS?
 
-AI Output (summary or screenshot reference):
+AI Output (summary or screenshot reference): 
 It explained how to set up dark mode by adding a dark class to the body and writing CSS that only applies when that class is active. So basically, whenever the body has the dark class applied, those styles override the light mode styles, and later JavaScript can toggle that class on and off when the user clicks a button.
 
 How I used/modified it in my project:
-I made a separate section at the bottom of my CSS and added body.dark for all the parts so that later, when I add the dark mode button with JavaScript, the colors will switch automatically.
+I made a separate section at the bottom of my CSS and added `body.dark` for all the parts so that later, when I add the dark mode button with JavaScript, the colors will switch automatically.
 
 
 
 Entry #6
 Tool Used: Claude.ai
 Prompt (copy-paste exactly): 
-
-Generate Javascript code for a button that can show or hide the skill bars. When the bars appear, they should fill up smoothly to their set widths, and when hidden, they reset to 0%. The button text should also change depending on whether the bars are visible or not. Explain the code step by step.
+ Generate Javascript code for a button that can show or hide the skill bars. When the bars appear, they should fill up smoothly to their set widths, and when hidden, they reset to 0%. The button text should also change depending on whether the bars are visible or not. Explain the code step by step.
 
 AI Output (summary or screenshot reference):
 It showed how to make a button in JavaScript that can show or hide skill bars. When the button is clicked, the skill bars either appear and animate to fill up based on their data values or disappear and reset to zero. The button text also changes automatically to let the user know if the bars are currently shown or hidden. Each part of the code was explained line by line so it’s clear what every step does.
@@ -292,11 +278,9 @@ How I used/modified it in my project:
 I added a button to my skills section that shows or hides my skill bars. I used the JavaScript from the example but adjusted it so I can manually set or change each bar’s width when needed.
 
 
-
 Entry #7
 Tool Used: Claude.ai
-Prompt (copy-paste exactly):
-
+Prompt (copy-paste exactly): 
 Generate JavaScript code to check a contact form. The code should make sure the Name, Email and Message fields are not empty, check that the email is in the right format, show error messages if something is wrong and show a success message when everything is correct. Explain the code step by step so I can understand it and change the field names myself later.
 
 AI Output (summary or screenshot reference):
@@ -309,8 +293,7 @@ I added the code to my contact form and changed the input IDs to match my fields
 
 Entry #8
 Tool Used: Claude.ai
-Prompt (copy-paste exactly):
-
+Prompt (copy-paste exactly):  
 Generate jQuery code for a dark mode button that switches a class on the body and changes the icon. Also, make a project filter that shows/hides projects by type and highlights the selected button. Explain the code step by step.
 
 AI Output (summary or screenshot reference):
@@ -323,8 +306,7 @@ I added this code to make the project filter work and prepared the dark mode but
 
 Entry #9
 Tool Used: Claude.ai
-Prompt (copy-paste exactly): 
-
+Prompt (copy-paste exactly):  
 Analyze my HTML and suggest changes to support my JavaScript features such as skill bar toggle, form validation, dark mode, project filter, navigation, and greeting prompt. Highlight missing IDs, classes, or data attributes, explain why each is needed, and provide example corrected HTML snippets
 
 AI Output (summary or screenshot reference):
