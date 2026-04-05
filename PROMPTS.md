@@ -89,7 +89,7 @@ AI Output (summary or screenshot reference):
 Four errors were found in the code a missing # in the About nav link, an unclosed tag in the About section, a wrong heading tag in the Projects section and in the Skills list, the & symbol was used incorrectly and should be written as &amp instead.
 
 How I used/modified it in my project:
-I fixed the errors AI pointed out. I added the missing # in the nav link, closed the paragraph tag, changed the heading to <h2>, and corrected the HTML symbols.
+I fixed the errors AI pointed out. I added the missing # in the nav link, closed the paragraph tag, changed the heading to "<h2>", and corrected the HTML symbols.
 
 
 
